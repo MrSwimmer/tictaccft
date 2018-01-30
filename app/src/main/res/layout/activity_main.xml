@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrswimmer.tic_tac_cft.MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/play_restart"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:text="Поражения: "
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/play_lose_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="44dp"
+        android:text="Победы: "
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/play_win_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/play_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="Заново" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/black"
+        android:columnCount="3"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/cell_1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="onClickCell"
+            android:padding="1dp"
+            android:src="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/cell_2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="onClickCell"
+            android:padding="1dp"
+            android:src="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/cell_3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="onClickCell"
+            android:padding="1dp"
+            android:src="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/cell_4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="onClickCell"
+            android:padding="1dp"
+            android:src="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/cell_5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="onClickCell"
+            android:padding="1dp"
+            android:src="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/cell_6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="onClickCell"
+            android:padding="1dp"
+            android:src="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/cell_7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="onClickCell"
+            android:padding="1dp"
+            android:src="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/cell_8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="onClickCell"
+            android:padding="1dp"
+            android:src="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/cell_9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="onClickCell"
+            android:padding="1dp"
+            android:src="@android:color/background_light" />
+
+    </GridLayout>
+
+</RelativeLayout>
